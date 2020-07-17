@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tgY-fy-Ig3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="GNQ-yB-Zhk">
+            <objects>
+                <navigationController id="mAt-rq-mTv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZZo-9p-CWG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tgY-fy-Ig3" kind="relationship" relationship="rootViewController" id="o6t-aQ-aVw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OY9-Wq-TiP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="101"/>
+        </scene>
+        <!--Unit Bean News View Controller-->
+        <scene sceneID="FO1-Pf-QzX">
+            <objects>
+                <viewController storyboardIdentifier="UnitBeanNewsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tgY-fy-Ig3" customClass="UnitBeanNewsViewController" customModule="UnitBeanNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lfa-Eb-flT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GAb-Xb-WOT" userLabel="NewsTableView">
+                                <rect key="frame" x="0.0" y="77" width="414" height="724"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="jQL-hf-B7I">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jQL-hf-B7I" id="adb-tJ-yb1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="wmi-7C-nqN">
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wmi-7C-nqN" id="V5X-cz-LKi">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="1cf-z7-46J">
+                                        <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1cf-z7-46J" id="ivm-Pc-tPx">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ЗАГРУЗИТЬ ЕЩЕ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3us-Xv-8lB" userLabel="downloadMoreButton">
+                                <rect key="frame" x="140" y="841" width="135" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="UgY-5O-ICW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3us-Xv-8lB" firstAttribute="top" secondItem="GAb-Xb-WOT" secondAttribute="bottom" constant="40" id="Ag4-Yg-EOY"/>
+                            <constraint firstItem="3us-Xv-8lB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FvG-Ma-rn5" secondAttribute="leading" id="M3p-D7-vB2"/>
+                            <constraint firstItem="GAb-Xb-WOT" firstAttribute="centerX" secondItem="Lfa-Eb-flT" secondAttribute="centerX" id="Mqm-Oe-Py4"/>
+                            <constraint firstItem="GAb-Xb-WOT" firstAttribute="leading" secondItem="FvG-Ma-rn5" secondAttribute="leading" id="VJI-f4-22T"/>
+                            <constraint firstItem="GAb-Xb-WOT" firstAttribute="top" secondItem="Lfa-Eb-flT" secondAttribute="topMargin" constant="-11" id="Wck-Rx-ENc"/>
+                            <constraint firstItem="3us-Xv-8lB" firstAttribute="top" secondItem="FvG-Ma-rn5" secondAttribute="top" constant="753" id="g0Y-Ak-xF5"/>
+                            <constraint firstItem="FvG-Ma-rn5" firstAttribute="trailing" secondItem="3us-Xv-8lB" secondAttribute="trailing" constant="139" id="rTs-18-Eot"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FvG-Ma-rn5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K40-1M-vCA"/>
+                    <connections>
+                        <outlet property="downloanMoreNews" destination="3us-Xv-8lB" id="WfS-NZ-bzI"/>
+                        <outlet property="newsTableView" destination="GAb-Xb-WOT" id="nS4-Nt-5CY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZaS-xL-YM0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.72463768115949" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+</document>

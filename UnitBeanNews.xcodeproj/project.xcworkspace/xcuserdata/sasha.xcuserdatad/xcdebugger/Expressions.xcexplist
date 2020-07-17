@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "UnitBeanNewsViewController.tableView(_:titleForHeaderInSection:):UnitBeanNewsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "tableView.numberOfSections()">
+            </PersistentString>
+            <PersistentString
+               value = "newsTableView.numberOfRows(inSection: section)">
+            </PersistentString>
+            <PersistentString
+               value = "bookTitle">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UnitBeanNewsViewController.customizeTableView():UnitBeanNewsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "titleNews">
+            </PersistentString>
+            <PersistentString
+               value = "AuthorInformation">
+            </PersistentString>
+            <PersistentString
+               value = "authorName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "UnitBeanNewsViewController.viewDidLoad():UnitBeanNewsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "authorName">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
