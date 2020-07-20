@@ -21,7 +21,8 @@ var bookAuthor: AuthorInformation?
         
     }
    
-    init(bookTitle: String, bookDescription: String) {
+    init(bookTitle: String,
+         bookDescription: String) {
         
     }
     

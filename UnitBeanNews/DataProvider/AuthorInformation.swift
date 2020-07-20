@@ -17,16 +17,25 @@ struct AuthorInformation {
     
     
     
+ 
+    
+    
     init() {
         authorName = ""
          authorSurname = ""
          authorMiddleName = ""
+       //  birthDay = Date
+        booksList = []
         
         
     }
     init(authorName: String, authorSurname: String, authorMidleName: String?, birthDay: Date, booksList: [BookInformation]) {
         
-        self.authorName = authorSurname + authorName
+        self.authorName = authorName
+        self.authorSurname = authorSurname
+        self.authorMiddleName = authorMidleName
+        self.birthDay = birthDay
+        self.booksList  = booksList
         
     }
     
